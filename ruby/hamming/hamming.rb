@@ -15,3 +15,5 @@ class Hamming
     end
   end
 end
+
+
