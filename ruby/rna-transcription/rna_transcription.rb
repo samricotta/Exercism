@@ -7,15 +7,12 @@ class Complement
   }
 
   def self.of_dna(dna)
+    return '' if dna.empty?
     convert = ''
-    if dna != ''
-      dna.each_char do |e|
-        convert << CONVERSION[e.to_sym]
-      end
-      convert
-    else
-      ''
+    dna.each_char do |e|
+      convert << CONVERSION[e.to_sym]
     end
+    convert
   end
 end
 
